@@ -1,0 +1,17 @@
+- name: Install Apache
+  ansible.builtin.apt:
+    name: "apache2"
+    state: present
+    update_cache: true
+
+- name: Install php
+  ansible.builtin.apt:
+    name: "php"
+    state: present
+    update_cache: true
+
+- name: Install php-mysql
+  ansible.builtin.apt:
+    name: "php-mysql"
+    state: present
+    update_cache: true
